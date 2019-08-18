@@ -143,7 +143,7 @@ const dashboard = {
     //todo goal status -open (future) -achieved -missed
     //todo goal summary (number achieved/missed)
     //todo git repo with version historu and tagged releases
-                
+
    */
 
 };
