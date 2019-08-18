@@ -1,41 +1,41 @@
 {{> usermenu id="Update user"}}
 
-<form class="ui stacked segment form" action="/currentUserUpdate" method="POST">
+<form class="ui stacked segment form" action="/updateCurrentUser" method="POST">
   <h3 class="ui header">Update the current user details</h3>
   <div class="two fields">
     <div class="field">
       <label>First Name</label>
-      <input placeholder="First Name" type="text"  name="firstName">
+      <input value="{{loggedInUserFirstname}}" type="text"  name="firstName">
     </div>
     <div class="field">
       <label>Last Name</label>
-      <input placeholder="Last Name" type="text"  name="lastName">
+      <input value= "{{loggedInUserLastname}}" type="text"  name="lastName">
     </div>
   </div>
   <div class="field">
     <label>Email</label>
-    <input placeholder="Email" type="text" name="email">
+    <input value="{{loggedInUserEmail}}" type="text" name="email">
   </div>
     <div class="field">
         <label>Password</label>
-        <input type="password" name="password">
+        <input value="{{loggedInUserpassword}}" name="password">
     </div>
   <div class="field">
         <label>Address</label>
-        <input placeholder="Address" type="text" name="address">
+        <input value="{{loggedInUseraddress}}" type="text" name="address">
     </div>
     <div class="two fields">
     <div class="field">
         <label>Height</label>
-        <input placeholder="0.0cm" type="text" name="height">
+        <input value="{{loggedInUserheight}}" type="text" name="height">
     </div>
     <div class="field">
         <label>Starting Weight</label>
-        <input placeholder="0.0kg" type="text" name="initialweight">
+        <input value="{{loggedInUserInitialWeight}}" type="text" name="initialweight">
     </div>
         <div class="field">
             <label>Gender</label>
-            <input placeholder="" type="text" name="gender">
+            <input value="{{loggedInUserGender}}" type="text" name="gender">
         </div>
     </div>
     <button class="ui blue submit button">Submit</button>

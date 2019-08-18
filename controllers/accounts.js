@@ -38,6 +38,23 @@ const accounts = {
     logger.info(`registering ${user.email}`);
     response.redirect("/");
   },
+  updateCurrentUser(request,response){
+    const user = request.body;
+    const userEmail = request.cookies.playlist;
+    const currentUser = userstore.getUserByEmail(userEmail);
+    currentUser.email=user.email;
+    currentUser.firstName=user.firstName;
+    currentUser.lastName=user.lastName;
+    currentUser.height=user.height;
+    currentUser.initialweight=user.initialweight;
+    currentUser.gender=user.gender;
+    currentUser.address=user.address;
+    currentUser.password=user.password;
+    userstore.updateUser(user);
+    response.cookie("playlist", user.email);
+    //logger.info(`updating the user ${user.email}`);
+    response.redirect("/dashboard");
+  },
 
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
@@ -49,10 +66,27 @@ const accounts = {
       response.redirect("/login");
     }
   },
+  currentUserUpdate(request,response){
+    const userEmail = request.cookies.playlist;
+    const user = userstore.getUserByEmail(userEmail);
+    const viewData = {
+      loggedInUserFirstname: user.firstName,
+      loggedInUserLastname: user.lastName,
+      loggedInUserEmail:user.email,
+      loggedInUserpassword:user.password,
+      loggedInUseraddress:user.address,
+      loggedInUserheight:user.height,
+      loggedInUserInitialWeight:user.initialweight,
+      loggedInUserGender:user.gender
+    };
+
+    response.render("currentUser",viewData)
+  },
 
   getCurrentUser(request) {
     const userEmail = request.cookies.playlist;
     return userstore.getUserByEmail(userEmail);
+
   }
 };
 

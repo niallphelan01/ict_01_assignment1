@@ -12,7 +12,7 @@ const dashboard = {
     var BMI =0 ;
     var BMICategory=0;
     var colour = "blue";
-    const loggedInUser = accounts.getCurrentUser(request);
+    var loggedInUser = accounts.getCurrentUser(request);
     var currentAssessment = assessmentlistStore.getCurrentAssessment(loggedInUser.id);
     //BMI calculation and allowance for no assessment
     if (currentAssessment==null)

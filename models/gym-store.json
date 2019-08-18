@@ -362,6 +362,39 @@
       "upperarm": "9",
       "waist": "",
       "hips": ""
+    },
+    {
+      "id": "296bdbc9-5ba4-4987-bd72-5a10d3109da4",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "date": "18-8-2019",
+      "weight": "81",
+      "chest": "",
+      "thigh": "",
+      "upperarm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "2458cb42-51d4-4362-924f-c136fb68a390",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "date": "18-8-2019",
+      "weight": "78",
+      "chest": "",
+      "thigh": "",
+      "upperarm": "",
+      "waist": "",
+      "hips": ""
+    },
+    {
+      "id": "64dda272-90d4-4f18-9190-20b0e39244fb",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "date": "18-8-2019",
+      "weight": "75",
+      "chest": "",
+      "thigh": "",
+      "upperarm": "",
+      "waist": "",
+      "hips": ""
     }
   ]
 }

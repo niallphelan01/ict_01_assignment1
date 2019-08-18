@@ -22,6 +22,11 @@ const userStore = {
 
   getUserByEmail(email) {
     return this.store.findOneBy(this.collection, { email: email });
+  },
+  updateUser(user){
+   // let searchedUser =this.store.findBy(this.collection, user);
+   // searchedUser.email= "test";
+    this.store.save();
   }
 };
 

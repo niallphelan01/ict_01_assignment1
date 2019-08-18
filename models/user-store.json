@@ -17,16 +17,16 @@
       "email": "marge@simpson.com",
       "password": "secret",
       "address": "test",
-      "height": 180,
-      "initialweight": 100,
+      "height": "180",
+      "initialweight": "100",
       "gender": "female",
       "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
     },
     {
       "firstName": "nialll",
       "lastName": "test",
-      "email": "test@test.com",
-      "password": "test",
+      "email": "test",
+      "password": "niall@test.com",
       "address": "test",
       "height": 180,
       "initialweight": 100,
@@ -34,37 +34,15 @@
       "id": "97931b49-a4b6-4bbc-9b62-410ebecec43c"
     },
     {
-      "firstName": "test",
-      "lastName": "test",
-      "email": "test@test.com",
-      "password": "test",
-      "address": "test",
-      "height": 122,
-      "initialweight": 122,
-      "gender": "male",
-      "id": "13d56a93-8d8b-4c2e-9d04-b376c3e403f5"
-    },
-    {
       "firstName": "jane",
       "lastName": "test",
-      "email": "j@j.com",
+      "email": "jane@test.com",
       "password": "test",
       "address": "test",
       "height": "180",
       "initialweight": "180",
       "gender": "female",
       "id": "7fa51abc-3b11-43fd-b1d1-1fe0f86db0e2"
-    },
-    {
-      "firstName": "jophn",
-      "lastName": "TEST",
-      "email": "jt@test.com",
-      "password": "test",
-      "address": "test",
-      "height": "180",
-      "initialweight": "100",
-      "gender": "male",
-      "id": "6c2c5a68-6315-4da6-8f58-ddf1b12cbaf1"
     }
   ]
 }
