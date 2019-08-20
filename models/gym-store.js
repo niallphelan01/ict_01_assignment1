@@ -30,8 +30,12 @@ const assessmentlistStore = {
    addAssessment(assessmentlist) {
         this.store.add(this.collection, assessmentlist);
         this.store.save();
-    }
-
+    },
+    removeAssessment(id) {
+        const assessment = this.getAssessmentlist(id);
+        this.store.remove(this.collection, assessment);
+        this.store.save();
+    },
 
 };
 

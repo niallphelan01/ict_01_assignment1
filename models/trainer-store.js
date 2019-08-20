@@ -7,7 +7,7 @@ const trainerStore = {
     store: new JsonStore("./models/trainer-store.json", { trainers: [] }),
     collection: "trainers",
 
-    /*
+
     getAllUsers() {
         return this.store.findAll(this.collection);
     },
@@ -23,7 +23,7 @@ const trainerStore = {
 
     getUserByEmail(email) {
         return this.store.findOneBy(this.collection, { email: email });
-    }*/
+    }
 };
 
 module.exports = trainerStore;

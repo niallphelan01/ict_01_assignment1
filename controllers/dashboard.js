@@ -116,9 +116,16 @@ const dashboard = {
     };
      logger.debug("Creating a new Assessment", newAssessment);
      assessmentlistStore.addAssessment(newAssessment);
-     response.redirect('/dashboard');
+     response.redirect("/dashboard");
 
-  }
+  },
+    deleteAssessment(request,response){
+      const assessmentId = request.params.id;
+      logger.debug(`Deleting the assessment ${assessmentId}`);
+      assessmentlistStore.removeAssessment(assessmentId);
+      response.redirect("dashboard");
+
+    }
   /*
   Good level
    */

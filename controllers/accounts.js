@@ -1,6 +1,7 @@
 "use strict";
 
 const userstore = require("../models/user-store");
+const trainerstore= require("../models/trainer-store");
 const logger = require("../utils/logger");
 const uuid = require("uuid");
 //todo add a login for the trainer on drop down if possible
@@ -17,6 +18,12 @@ const accounts = {
       title: "Login to the Service"
     };
     response.render("login", viewData);
+  },
+  trainerLogin(request, response) {
+    const viewData = {
+      title: "Login to the Service"
+    };
+    response.render("trainerLogin", viewData);
   },
 
   logout(request, response) {
@@ -64,6 +71,17 @@ const accounts = {
       response.redirect("/dashboard");
     } else {
       response.redirect("/login");
+    }
+  },
+  trainerAuthenticate(request, response) {
+    const trainer = trainerstore.getUserByEmail(request.body.email);
+    if (trainer) {
+      response.cookie("trainer", trainer.email);
+      logger.info(`logging in ${trainer.email}`);
+      response.redirect("/trainerDashboard");
+    } else {
+      logger.info(`cannot login ${trainer.email}`);
+      response.redirect("/trainerLogin");
     }
   },
   currentUserUpdate(request,response){
