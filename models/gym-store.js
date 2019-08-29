@@ -33,7 +33,9 @@ const assessmentlistStore = {
     },
     removeAssessment(id) {
         const assessment = this.getAssessmentlist(id);
+        //logger.debug(`Deleting Assessment id ${assessment}`
         this.store.remove(this.collection, assessment);
+       // _.remove(assessment, {id:assessment});
         this.store.save();
     },
 

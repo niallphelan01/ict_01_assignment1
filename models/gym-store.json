@@ -1,37 +1,15 @@
 {
   "assessmentlistCollection": [
     {
-      "id": "e2bb2743-81b8-4bc5-9cea-9a7361844e8f",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "date": "18-8-2019",
-      "weight": "",
-      "chest": "",
-      "thigh": "",
-      "upperarm": "",
-      "waist": "",
-      "hips": ""
-    },
-    {
-      "id": "f275f30f-dc75-467c-889d-764b73d03114",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "date": "18-8-2019",
-      "weight": "72",
-      "chest": "",
-      "thigh": "",
-      "upperarm": "",
-      "waist": "",
-      "hips": ""
-    },
-    {
-      "id": "e290f6d7-dc04-4a9b-ac6b-b86bcca7b0bc",
+      "id": "0268b196-ba89-497e-8ec8-f06c9087823f",
       "userid": "97931b49-a4b6-4bbc-9b62-410ebecec43c",
       "date": "29-8-2019",
-      "weight": "",
-      "chest": "",
-      "thigh": "",
-      "upperarm": "",
-      "waist": "",
-      "hips": ""
+      "weight": "100",
+      "chest": "100",
+      "thigh": "100",
+      "upperarm": "100",
+      "waist": "100",
+      "hips": "100"
     }
   ]
 }

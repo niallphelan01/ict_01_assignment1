@@ -123,7 +123,7 @@ const dashboard = {
       const assessmentId = request.params.id;
       logger.debug(`Deleting the assessment ${assessmentId}`);
       assessmentlistStore.removeAssessment(assessmentId);
-      response.redirect("dashboard");
+      response.redirect("/dashboard");
 
     }
   /*
