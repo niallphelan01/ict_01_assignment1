@@ -21,7 +21,7 @@ const trainerStore = {
         return this.store.findOneBy(this.collection, { id: id });
     },
 
-    getUserByEmail(email) {
+    getTrainerByEmail(email) {
         return this.store.findOneBy(this.collection, { email: email });
     }
 };

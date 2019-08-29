@@ -74,13 +74,13 @@ const accounts = {
     }
   },
   trainerAuthenticate(request, response) {
-    const trainer = trainerstore.getUserByEmail(request.body.email);
+    const trainer = trainerstore.getTrainerByEmail(request.body.email);
     if (trainer) {
       response.cookie("trainer", trainer.email);
       logger.info(`logging in ${trainer.email}`);
       response.redirect("/trainerDashboard");
     } else {
-      logger.info(`cannot login ${trainer.email}`);
+      logger.info(`user cannot be logged in login`);
       response.redirect("/trainerLogin");
     }
   },
@@ -105,6 +105,10 @@ const accounts = {
     const userEmail = request.cookies.playlist;
     return userstore.getUserByEmail(userEmail);
 
+  },
+  getCurrentTrainer(request){
+    const trainerEmail = request.cookies.trainer;
+    return trainerstore.getTrainerByEmail(trainerEmail);
   }
 };
 

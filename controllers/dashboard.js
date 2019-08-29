@@ -129,7 +129,6 @@ const dashboard = {
   /*
   Good level
    */
-  //todo add the user accounts setting and change handling
   //todo add trainer accounts
   //todo add trainer accounts that can see a view of member assessments and add comment field
 
