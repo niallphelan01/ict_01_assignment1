@@ -113,6 +113,7 @@ const dashboard = {
       waist: request.body.waist,
       hips: request.body.hips,
       gender: request.body.gender,
+      comment: "none"
     };
      logger.debug("Creating a new Assessment", newAssessment);
      assessmentlistStore.addAssessment(newAssessment);

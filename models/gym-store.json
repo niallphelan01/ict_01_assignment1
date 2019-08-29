@@ -9,7 +9,32 @@
       "thigh": "100",
       "upperarm": "100",
       "waist": "100",
-      "hips": "100"
+      "hips": "100",
+      "comment": "none"
+    },
+    {
+      "id": "ad6b9b88-ebbb-401b-aebe-d3dac3da140d",
+      "userid": "97931b49-a4b6-4bbc-9b62-410ebecec43c",
+      "date": "29-8-2019",
+      "weight": "80",
+      "chest": "89",
+      "thigh": "81",
+      "upperarm": "81",
+      "waist": "81",
+      "hips": "81",
+      "comment": "none"
+    },
+    {
+      "id": "5f46ad3f-1eaa-4e12-8da9-62df236a0fca",
+      "userid": "97931b49-a4b6-4bbc-9b62-410ebecec43c",
+      "date": "29-8-2019",
+      "weight": "76",
+      "chest": "",
+      "thigh": "",
+      "upperarm": "",
+      "waist": "",
+      "hips": "",
+      "comment": "none"
     }
   ]
 }
