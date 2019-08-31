@@ -9,12 +9,6 @@ const assessmentlistStore = {
     }),
     collection: "assessmentlistCollection",
 
-    getAllAssessmentlists() {
-        return this.store.findAll(this.collection);
-    },
-    getUserIdbyAssessmentId(id){
-        return this.store.findOneBy(this.collection, {id});
-    },
 
     getAssessmentlist(id) {
         return this.store.findOneBy(this.collection, { id: id });
@@ -41,7 +35,9 @@ const assessmentlistStore = {
        // _.remove(assessment, {id:assessment});
         this.store.save();
     },
-
+    updateAssessment(userId){
+        this.store.save();
+    }
 };
 
 module.exports = assessmentlistStore;
