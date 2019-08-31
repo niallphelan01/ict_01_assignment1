@@ -27,8 +27,12 @@ const accounts = {
   },
 
   logout(request, response) {
-    response.cookie("playlist", "");
+    response.cookie("member", "");
     response.redirect("/");
+  },
+  trainerLogout(request,response){
+    response.cookie("trainer","");
+        response.redirect("/");
   },
 
   signup(request, response) {
@@ -47,7 +51,7 @@ const accounts = {
   },
   updateCurrentUser(request,response){
     const user = request.body;
-    const userEmail = request.cookies.playlist;
+    const userEmail = request.cookies.membert;
     const currentUser = userstore.getUserByEmail(userEmail);
     currentUser.email=user.email;
     currentUser.firstName=user.firstName;
@@ -58,7 +62,7 @@ const accounts = {
     currentUser.address=user.address;
     currentUser.password=user.password;
     userstore.updateUser(user);
-    response.cookie("playlist", user.email);
+    response.cookie("member", user.email);
     //logger.info(`updating the user ${user.email}`);
     response.redirect("/dashboard");
   },
@@ -66,7 +70,7 @@ const accounts = {
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
     if (user) {
-      response.cookie("playlist", user.email);
+      response.cookie("member", user.email);
       logger.info(`logging in ${user.email}`);
       response.redirect("/dashboard");
     } else {
@@ -85,7 +89,7 @@ const accounts = {
     }
   },
   currentUserUpdate(request,response){
-    const userEmail = request.cookies.playlist;
+    const userEmail = request.cookies.member;
     const user = userstore.getUserByEmail(userEmail);
     const viewData = {
       loggedInUserFirstname: user.firstName,
@@ -100,9 +104,11 @@ const accounts = {
 
     response.render("currentUser",viewData)
   },
+deleteUser(request,response){
 
+},
   getCurrentUser(request) {
-    const userEmail = request.cookies.playlist;
+    const userEmail = request.cookies.member;
     return userstore.getUserByEmail(userEmail);
 
   },

@@ -14,10 +14,11 @@ router.get("/login", accounts.login);
 router.get("/trainerLogin", accounts.trainerLogin);
 router.get("/signup", accounts.signup);
 router.get("/logout", accounts.logout);
+router.get("/trainerLogout", accounts.trainerLogout);
 router.post("/register", accounts.register);
 router.post("/authenticate", accounts.authenticate);
 router.post("/trainerAuthenticate", accounts.trainerAuthenticate);
-
+router.post("/trainerDashboard/deleteUser:id", accounts.deleteUser);
 router.get("/settings", accounts.currentUserUpdate);
 
 router.post("/updateCurrentUser", accounts.updateCurrentUser);

@@ -25,9 +25,11 @@ const trainerDashboard = {
         //Get the current user by the ID selected
         var user = userStore.getUserById(userId);
 
+        var assessmentlists = assessmentlistStore.getUserAssessmentlists(userId)
+        assessmentlists.sort((a,b)=> (a.date< b.date)?1:-1);
             const viewData = {
                 //return the assessmentList for the users
-                assessmentList: assessmentlistStore.getUserAssessmentlists(userId),
+                assessmentList: assessmentlists,
                 //return the lastName and FirstName from the user
                 firstName: user.firstName,
                 lastName: user.lastName
