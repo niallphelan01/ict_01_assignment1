@@ -105,6 +105,10 @@ const accounts = {
     response.render("currentUser",viewData)
   },
 deleteUser(request,response){
+  const userId = request.params.id;
+  logger.debug(`Deleting the user ${userId}`);
+  userstore.removeUser(userId);
+  response.redirect("/trainerDashboard");
 
 },
   getCurrentUser(request) {

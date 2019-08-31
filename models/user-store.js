@@ -28,6 +28,11 @@ const userStore = {
    // let searchedUser =this.store.findBy(this.collection, user);
    // searchedUser.email= "test";
     this.store.save();
+  },
+  removeUser(id) {
+    const user = this.getUserById(id);
+    this.store.remove(this.collection, user);
+    this.store.save();
   }
 };
 

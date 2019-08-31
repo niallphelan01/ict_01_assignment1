@@ -134,15 +134,14 @@ const dashboard = {
   /*
   Good level
    */
-  //todo add trainer accounts
-  //todo add trainer accounts that can see a view of member assessments and add comment field
+
 
   /*
     Excellent level
-    //todo members can delete individual assessments
+
     //todo members can set goals
     //todo members can delete any users
-    //todo date/time for each assessment
+
     //todo goals for future date and measurement
     //todo Git repo with version history
    */

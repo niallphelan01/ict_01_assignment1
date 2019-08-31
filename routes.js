@@ -18,7 +18,7 @@ router.get("/trainerLogout", accounts.trainerLogout);
 router.post("/register", accounts.register);
 router.post("/authenticate", accounts.authenticate);
 router.post("/trainerAuthenticate", accounts.trainerAuthenticate);
-router.post("/trainerDashboard/deleteUser:id", accounts.deleteUser);
+router.get("/deleteUser/:id/", accounts.deleteUser);
 router.get("/settings", accounts.currentUserUpdate);
 
 router.post("/updateCurrentUser", accounts.updateCurrentUser);

@@ -23,17 +23,6 @@
       "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
     },
     {
-      "firstName": "nialll",
-      "lastName": "test",
-      "email": "test",
-      "password": "niall@test.com",
-      "address": "test",
-      "height": 180,
-      "initialweight": 100,
-      "gender": "male",
-      "id": "97931b49-a4b6-4bbc-9b62-410ebecec43c"
-    },
-    {
       "firstName": "jane",
       "lastName": "test",
       "email": "jane@test.com",
