@@ -47,6 +47,18 @@
       "waist": "100",
       "hips": "100",
       "comment": "you are doing great"
+    },
+    {
+      "id": "cb2d9760-d64e-4460-9e06-20b2b8bbe00d",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "date": "31-8-2019 20:13",
+      "weight": "100",
+      "chest": "100",
+      "thigh": "100",
+      "upperarm": "100",
+      "waist": "100",
+      "hips": "100",
+      "comment": "none"
     }
   ]
 }

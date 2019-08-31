@@ -14,6 +14,7 @@ const dashboard = {
     var colour = "blue";
     var loggedInUser = accounts.getCurrentUser(request);
     var currentAssessment = assessmentlistStore.getCurrentAssessment(loggedInUser.id);
+
     //BMI calculation and allowance for no assessment
     if (currentAssessment==null)
     {
@@ -82,7 +83,10 @@ const dashboard = {
       else
         colour="red";
     }
-
+   var assessmentlists =  assessmentlistStore.getUserAssessmentlists(loggedInUser.id);
+    //sort the list by dates in chronological order
+    //reference https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/
+    assessmentlists.sort((a,b)=> (a.date< b.date)?1:-1);
     const viewData = {
       title: "Assessment Dashboard",
       BMI: BMI,
@@ -90,7 +94,7 @@ const dashboard = {
       BMICategory: BMICategory,
       loggedInUserFirstname: loggedInUser.firstName,
       loggedInUserLastname: loggedInUser.lastName,
-      assessmentlists: assessmentlistStore.getUserAssessmentlists(loggedInUser.id)
+      assessmentlists: assessmentlists
     };
     logger.info("about to render assessment lists", assessmentlistStore.getUserAssessmentlists(loggedInUser.id));
     response.render("dashboard", viewData);
@@ -101,7 +105,7 @@ const dashboard = {
     logger.debug("the logged in user" + loggedInUser);
     //get tge current date and give the correct order
     var date = new Date();
-    var formatted_date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+    var formatted_date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " + date.getHours() +":"+ date.getMinutes();
     const newAssessment = {
       id: uuid(),
       userid: loggedInUser.id,
