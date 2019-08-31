@@ -12,6 +12,9 @@ const assessmentlistStore = {
     getAllAssessmentlists() {
         return this.store.findAll(this.collection);
     },
+    getUserIdbyAssessmentId(id){
+        return this.store.findOneBy(this.collection, {id});
+    },
 
     getAssessmentlist(id) {
         return this.store.findOneBy(this.collection, { id: id });

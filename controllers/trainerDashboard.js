@@ -21,7 +21,25 @@ const trainerDashboard = {
             userlist: userStore.getAllUsers()
         };
         response.render("trainerDashboard", viewData);
-    }
+    },
+    assessments(request,response){
+
+
+        const userId = request.params.id;
+
+        //Get the current user by the ID selected
+        var user = userStore.getUserById(userId);
+
+            const viewData = {
+                //return the assessmentList for the users
+                assessmentList: assessmentlistStore.getUserAssessmentlists(userId),
+                //return the lastName and FirstName from the user
+                firstName: user.firstName,
+                lastName: user.lastName
+            };
+            response.render("assessmentlist", viewData);
+        }
     };
+
 
 module.exports = trainerDashboard;

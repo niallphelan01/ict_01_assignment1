@@ -1,5 +1,6 @@
 <table class="ui table">
     <thead>
+
     <tr>
         <th>Date</th>
         <th>Weight</th>
@@ -12,7 +13,7 @@
     </tr>
     </thead>
     <tbody>
-    {{#each assessments}}
+    {{#each assessmentList}}
         <tr>
             <td>
                 {{date}}
@@ -38,7 +39,11 @@
             <td>
                 {{comment}}
             </td>
-
+            <td>
+                <a href="/assessmentList/{{id}}" class="ui icon button">
+                    <i class="upload icon"></i>
+                </a>
+            </td>
         </tr>
     {{/each}}
     </tbody>

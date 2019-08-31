@@ -24,6 +24,7 @@ router.post("/updateCurrentUser", accounts.updateCurrentUser);
 router.get("/dashboard/deleteAssessment/:id",dashboard.deleteAssessment);
 router.get("/dashboard", dashboard.index);
 router.get("/trainerDashboard", trainerDashboard.index);
+router.get("/assessmentlist/:id/", trainerDashboard.assessments);
 
 router.post("/dashboard/addAssessment", dashboard.addassessment);
 
