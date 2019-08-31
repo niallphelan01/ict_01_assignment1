@@ -23,15 +23,15 @@
       "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
     },
     {
-      "firstName": "jane",
-      "lastName": "test",
-      "email": "jane@test.com",
-      "password": "test",
+      "firstName": "tom",
+      "lastName": "jones",
+      "email": "tom@jones.com",
+      "password": "secret",
       "address": "test",
       "height": "180",
-      "initialweight": "180",
-      "gender": "female",
-      "id": "7fa51abc-3b11-43fd-b1d1-1fe0f86db0e2"
+      "initialweight": "100",
+      "gender": "male",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
     }
   ]
 }

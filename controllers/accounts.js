@@ -69,7 +69,7 @@ const accounts = {
 
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
-    if (user) {
+    if (user && user.password===request.body.password) {
       response.cookie("member", user.email);
       logger.info(`logging in ${user.email}`);
       response.redirect("/dashboard");
@@ -79,7 +79,7 @@ const accounts = {
   },
   trainerAuthenticate(request, response) {
     const trainer = trainerstore.getTrainerByEmail(request.body.email);
-    if (trainer) {
+    if (trainer && trainer.password===request.body.password) {
       response.cookie("trainer", trainer.email);
       logger.info(`logging in ${trainer.email}`);
       response.redirect("/trainerDashboard");
