@@ -109,7 +109,7 @@ const dashboard = {
     var formatted_date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " + date.getHours() +":"+ date.getMinutes();
 
     //work out if the trend should be positive or negative
- var trend ="blue";
+    var trend ="blue";
       var memberId= request.cookies.memberId;
       var assessmentlist = assessmentlistStore.getUserAssessmentlists(memberId);
       //if statement to compare new versus old weight for trending

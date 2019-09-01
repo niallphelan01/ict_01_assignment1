@@ -12,11 +12,11 @@
       "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
     },
     {
-      "firstName": "marge",
+      "firstName": "Marge",
       "lastName": "simpson",
       "email": "marge@simpson.com",
       "password": "secret",
-      "address": "test",
+      "address": "test2",
       "height": "180",
       "initialweight": "100",
       "gender": "female",

@@ -39,4 +39,59 @@
         </div>
     </div>
     <button class="ui blue submit button">Submit</button>
+<script>//script for form validation
+$('.ui.form')
+        .form({
+            fields: {
+                firstName: {
+                    identifier: 'First Name',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter your first name'
+                        }
+                    ]
+                },
+                lastName: {
+                    identifier: 'Last Name',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter your surname'
+                        }
+                    ]
+                },
+                initialweight: {
+                    identifier: 'initialweight',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter your weight'
+                        }
+                    ]
+                },
+                email: {
+                    identifier: 'email',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please select at least 6 characters'
+                        }
+                    ]
+                },
+                password: {
+                    identifier: 'password',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter a password'
+                        }
+                                            ]
+                }
+            }
+        })
+;
+</script>
+
 </form>
+
