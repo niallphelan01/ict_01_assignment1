@@ -5,7 +5,6 @@ const logger = require("../utils/logger");
 const assessmentlistStore = require("../models/gym-store.js");
 const userStore = require("../models/user-store.js");
 const trainerStore= require("../models/trainer-store.js");
-const uuid = require("uuid");
 
 const trainerDashboard = {
     index(request, response) {

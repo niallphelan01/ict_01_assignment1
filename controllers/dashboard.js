@@ -156,24 +156,12 @@ const dashboard = {
       response.redirect("/dashboard");
 
     }
-  /*
-  Good level
-   */
-
-
-  /*
-    Excellent level
-
-    //todo members can set goals
-
-    //todo goals for future date and measurement
-    //todo Git repo with version history
-   */
-  /*
+    /*
     Outstanding
+     //todo members can set goals
+    //todo goals for future date and measurement
     //todo show goal status promintely upon login
     //todo trainer can set goals for a member
-    //todo assessment always listed in chronological order
     //todo goal status -open (future) -achieved -missed
     //todo goal summary (number achieved/missed)
     //todo git repo with version historu and tagged releases
