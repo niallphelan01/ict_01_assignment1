@@ -45,45 +45,40 @@ const dashboard = {
 
     //Ideal weight calculations
     //
-    let heightDifference = 0;
-    let overHeight = 152.4;
-    let inch=2.54;
-    let perInchIncrease =2.3;
-    let weightForOverHeight; //assumeFemale
-    let idealweight=0;
-    let difference = 0;
-    if (loggedInUser.gender==="male") {
-      weightForOverHeight = 50;
-    }
-   else weightForOverHeight=45.5;
+         let heightDifference = 0;
+         let overHeight = 152.4;
+         let inch=2.54;
+         let perInchIncrease =2.3;
+         let weightForOverHeight; //assumeFemale
+         let idealweight=0;
+         let difference = 0;
+         if (loggedInUser.gender==="male") {
+             weightForOverHeight = 50;
+         }
+         else weightForOverHeight=45.5;
+         if (loggedInUser.height>152.4)
+             heightDifference = loggedInUser.height-152.4
+         else
+            heightDifference=0;
+         idealweight=((heightDifference/inch)*perInchIncrease)+weightForOverHeight;
+         if (currentAssessment==null) //i.e.  assessments
+            {
+            difference = Math.abs(idealweight - loggedInUser.initialweight);
+            difference = parseInt(difference);
+            if (idealweight<(loggedInUser.initialweight+2) && idealweight>(loggedInUser.initialweight-2))
+               colour="green";
+            else
+               colour="red";
+            }
+        else {
+             difference = Math.abs(idealweight - currentAssessment.weight);
+             if (difference < 2)
+                 colour = "green";
+             else
+                 colour = "red";
+         }
 
-   if (loggedInUser.height>152.4)
-     heightDifference = loggedInUser.height-152.4
-    else
-      heightDifference=0;
-
-    idealweight=((heightDifference/inch)*perInchIncrease)+weightForOverHeight;
-    if (currentAssessment==null) //i.e.  assessments
-    {
-      difference = Math.abs(idealweight - loggedInUser.initialweight);
-      difference = parseInt(difference);
-      if (idealweight<(loggedInUser.initialweight+2) && idealweight>(loggedInUser.initialweight-2))
-        colour="green";
-      else
-        colour="red";
-
-    }
-    else
-    {
-      difference = Math.abs(idealweight - currentAssessment.weight);
-      //if (idealweight<(loggedInUser.weight+2) && idealweight>(loggedInUser.weight-2))
-      //difference = parseInt(difference);
-        if (difference<2)
-        colour="green";
-      else
-        colour="red";
-    }
-   var assessmentlists =  assessmentlistStore.getUserAssessmentlists(loggedInUser.id);
+   var assessmentlists =  assessmentlistStore.getUserAssessmentlists(loggedInUser.id); //get the current list of assessments to order by
     //sort the list by dates in chronological order
     //reference https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/
       //http://www.javascriptkit.com/javatutors/arraysort2.shtml
@@ -114,10 +109,26 @@ const dashboard = {
     var formatted_date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " + date.getHours() +":"+ date.getMinutes();
 
     //work out if the trend should be positive or negative
+ var trend ="blue";
+      var memberId= request.cookies.memberId;
+      var assessmentlist = assessmentlistStore.getUserAssessmentlists(memberId);
+      //if statement to compare new versus old weight for trending
+       if (assessmentlistStore.getUserAssessmentlists(memberId).length > 0)  //check to see if there are older readings
+       { //if there are initial measurements
+           var compare1 = request.body.weight;
+           var compare2 = assessmentlist[assessmentlist.length -1].weight;
+                  }
+       else {  //if no measurements have been made
+           var compare2 =  userStore.getUserById(memberId).initialweight;
+           var compare1 = request.body.weight;
 
-          var memberId= request.cookies.memberId;
-       if (assessmentlistStore.getUserAssessmentlists(memberId).length > 0)
-           var trends = "red";
+       }
+      var test = compare1<=compare2;
+      if (test)
+          trend = "green";
+      else
+          trend = "red";
+
     const newAssessment = {
       id: uuid(),
       userid: loggedInUser.id,
@@ -131,7 +142,7 @@ const dashboard = {
       hips: request.body.hips,
       gender: request.body.gender,
       comment: "none",
-        trend: trends
+        trend: trend,
     };
      logger.debug("Creating a new Assessment", newAssessment);
      assessmentlistStore.addAssessment(newAssessment);
@@ -154,7 +165,6 @@ const dashboard = {
     Excellent level
 
     //todo members can set goals
-    //todo members can delete any users
 
     //todo goals for future date and measurement
     //todo Git repo with version history

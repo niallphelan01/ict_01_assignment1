@@ -27,11 +27,12 @@ const accounts = {
   },
 
   logout(request, response) {
-    response.cookie("member", "");
+    response.cookie("member", ""); //clear the member email
     response.redirect("/");
   },
   trainerLogout(request,response){
-    response.cookie("trainer","");
+    response.cookie("trainer","");  //clear trainer cookie
+    response.cookie("memberid",""); //clear the cookie from memberid
         response.redirect("/");
   },
 
