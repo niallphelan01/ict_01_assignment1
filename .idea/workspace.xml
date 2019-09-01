@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db07d2be-d76c-43ed-bec8-b7ddea58b80b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/assessmentlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/assessmentlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/gym-store.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/gym-store.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/trainer-store.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/trainer-store.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user-store.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/user-store.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,20 +22,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/signup.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/about.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
@@ -42,15 +31,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/accounts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/assessmentlist.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -60,28 +40,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/assessmentlist.hbs">
+        <entry file="file://$PROJECT_DIR$/controllers/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="2370">
+              <caret line="158" column="2" selection-start-line="158" selection-start-column="2" selection-end-line="158" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/currentUser.hbs">
+        <entry file="file://$PROJECT_DIR$/controllers/trainerDashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/trainer-store.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="43" column="3" lean-forward="true" selection-start-line="42" selection-end-line="93" selection-end-column="9" />
+              <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/dashboard.hbs">
+        <entry file="file://$PROJECT_DIR$/models/user-store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="510">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -89,17 +78,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/user-store.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="540">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/partials/addassessment.hbs">
+        <entry file="file://$PROJECT_DIR$/models/gym-store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="240">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/gym-store.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/trainer-store.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -139,7 +146,6 @@
         <option value="$PROJECT_DIR$/views/login.hbs" />
         <option value="$PROJECT_DIR$/views/partials/welcomemenu.hbs" />
         <option value="$PROJECT_DIR$/views/trainerLogin.hbs" />
-        <option value="$PROJECT_DIR$/models/trainer-store.js" />
         <option value="$PROJECT_DIR$/views/trainerDashboard.hbs" />
         <option value="$PROJECT_DIR$/views/assessmentlist.hbs" />
         <option value="$PROJECT_DIR$/views/partials/listassessments.hbs" />
@@ -149,19 +155,20 @@
         <option value="$PROJECT_DIR$/views/partials/trainermenu.hbs" />
         <option value="$PROJECT_DIR$/models/user-store.js" />
         <option value="$PROJECT_DIR$/routes.js" />
-        <option value="$PROJECT_DIR$/models/trainer-store.json" />
-        <option value="$PROJECT_DIR$/controllers/trainerDashboard.js" />
         <option value="$PROJECT_DIR$/views/partials/listofassessments.hbs" />
-        <option value="$PROJECT_DIR$/models/gym-store.json" />
         <option value="$PROJECT_DIR$/controllers/accounts.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/controllers/dashboard.js" />
         <option value="$PROJECT_DIR$/views/currentUser.hbs" />
         <option value="$PROJECT_DIR$/views/partials/addassessment.hbs" />
         <option value="$PROJECT_DIR$/models/user-store.json" />
         <option value="$PROJECT_DIR$/views/partials/formValidationSignup.hbs" />
         <option value="$PROJECT_DIR$/views/signup.hbs" />
         <option value="$PROJECT_DIR$/controllers/assessmentlist.js" />
+        <option value="$PROJECT_DIR$/controllers/dashboard.js" />
+        <option value="$PROJECT_DIR$/controllers/trainerDashboard.js" />
+        <option value="$PROJECT_DIR$/models/trainer-store.js" />
+        <option value="$PROJECT_DIR$/models/gym-store.json" />
+        <option value="$PROJECT_DIR$/models/trainer-store.json" />
       </list>
     </option>
   </component>
@@ -189,6 +196,11 @@
               <item name="gym_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="ict_01_assignment" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gym_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ict_01_assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,7 +274,7 @@
       <workItem from="1565620935992" duration="18515000" />
       <workItem from="1565675430519" duration="15444000" />
       <workItem from="1566146866901" duration="16215000" />
-      <workItem from="1566250219771" duration="37521000" />
+      <workItem from="1566250219771" duration="38373000" />
     </task>
     <task id="LOCAL-00001" summary="updated the readme.md file to represent the application">
       <created>1567329677878</created>
@@ -299,23 +311,37 @@
       <option name="project" value="LOCAL" />
       <updated>1567337069091</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="removed unnecessary code in the assessmentlist.js file">
+      <created>1567339195614</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567339195614</updated>
+    </task>
+    <task id="LOCAL-00007" summary="code tidy up of the trainerStore model and trainerDashboard">
+      <created>1567339435138</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567339435138</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93899000" />
+    <option name="totallyTimeSpent" value="94751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-636" y="-1057" width="1280" height="1017" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6440678" visible="true" weight="0.20333599" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6440678" visible="true" weight="0.20333599" />
       <window_info id="Structure" order="1" sideWeight="0.5019557" side_tool="true" weight="0.15183868" />
       <window_info id="npm" order="2" sideWeight="0.5019557" side_tool="true" weight="0.15183868" />
       <window_info id="Favorites" order="3" sideWeight="0.3559322" side_tool="true" weight="0.15183868" />
       <window_info anchor="bottom" id="Messages" weight="0.32972974" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21405405" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21405405" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -339,7 +365,9 @@
     <MESSAGE value="initial basic form entry validation for editMember added" />
     <MESSAGE value="initial basic form entry validation for adding assessments so as no field is left empty on the additon of an assessment" />
     <MESSAGE value="initial basic form entry validation for signup" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial basic form entry validation for signup" />
+    <MESSAGE value="removed unnecessary code in the assessmentlist.js file" />
+    <MESSAGE value="code tidy up of the trainerStore model and trainerDashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="code tidy up of the trainerStore model and trainerDashboard" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/partials/addplaylist.hbs" />
@@ -457,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/trainer-store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/displaystats.hbs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -478,13 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="42" column="47" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/trainerDashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -508,24 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/trainer-store.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
         </state>
       </provider>
     </entry>
@@ -543,31 +543,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/gym-store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user-store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/trainerDashboard.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/gym-store.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="70" column="3" selection-start-line="70" selection-start-column="3" selection-end-line="70" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -582,13 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user-store.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -655,6 +627,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2370">
+          <caret line="158" column="2" selection-start-line="158" selection-start-column="2" selection-end-line="158" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/trainerDashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/trainer-store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user-store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/gym-store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/gym-store.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user-store.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/trainer-store.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
         </state>
       </provider>
     </entry>
