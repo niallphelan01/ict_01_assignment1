@@ -20,10 +20,8 @@ const trainerDashboard = {
     },
     assessments(request,response){
         var userId = request.params.id;
-
         //Get the current user by the ID selected
         var user = userStore.getUserById(userId);
-
         var assessmentlists = assessmentlistStore.getUserAssessmentlists(userId)
         //sort the list by dates in chronological order
         //reference https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/
@@ -42,7 +40,6 @@ const trainerDashboard = {
             };
             response.render("assessmentlist", viewData);
         },
-
     editAssessment(request,response){
         const AssessmentId=request.params.id;
         var assessment = assessmentlistStore.getAssessmentlist(AssessmentId);
@@ -67,7 +64,5 @@ const trainerDashboard = {
 
     }
     }
-
-
 
 module.exports = trainerDashboard;
