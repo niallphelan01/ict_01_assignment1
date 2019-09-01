@@ -28,4 +28,68 @@
                     </div>
   </div>
   <button class="ui blue submit button">Add assessment</button>
+
+
 </form>
+<script>
+ $('.ui.form')
+          .form({
+              fields: {
+                  weight: {
+                      identifier: 'weight',
+                      rules: [
+                          {
+                              type   : 'empty',
+                              prompt : 'Please enter your weight'
+                          }
+                      ]
+                  },
+                  chest: {
+                      identifier: 'chest',
+                      rules: [
+                          {
+                              type   : 'empty',
+                              prompt : 'Please enter your chest'
+                          }
+                      ]
+                  },
+                  thigh: {
+                      identifier: 'thigh',
+                      rules: [
+                          {
+                              type   : 'empty',
+                              prompt : 'Please enter your thigh'
+                          }
+                      ]
+                  },
+                  upperarm: {
+                      identifier: 'upperarm',
+                      rules: [
+                          {
+                              type   : 'empty',
+                              prompt : 'Please enter yout upper arm'
+                          }
+                      ]
+                  },
+                  wasit: {
+                                        identifier: 'waist',
+                                        rules: [
+                                            {
+                                                type   : 'empty',
+                                                prompt : 'Please enter your waist'
+                                            }
+                                        ]
+                                    },
+                  hips: {
+                      identifier: 'hips',
+                      rules: [
+                          {
+                              type   : 'empty',
+                              prompt : 'Please your hips'
+                          }
+                                              ]
+                  }
+              }
+          })
+  ;
+  </script>
