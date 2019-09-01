@@ -103,7 +103,7 @@ const dashboard = {
 
   addassessment(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
-    logger.debug("the logged in user" + loggedInUser);
+    logger.debug("the logged in user" + loggedInUser.id);
     //get tge current date and give the correct order
     var date = new Date();
     var formatted_date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " + date.getHours() +":"+ date.getMinutes();
