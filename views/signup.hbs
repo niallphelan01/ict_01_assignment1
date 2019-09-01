@@ -1,41 +1,125 @@
 {{> welcomemenu id="signup"}}
-
+<script>
+    $('.ui.form')
+            .form({
+                fields: {
+                    firstName: {
+                        identifier: 'firstname',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your firstname'
+                            }
+                        ]
+                    },
+                    lastName: {
+                        identifier: 'lastname',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your surname'
+                            }
+                        ]
+                    },
+                    email: {
+                        identifier: 'email',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your email address'
+                            }
+                        ]
+                    },
+                    password: {
+                        identifier: 'password',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your password
+                            }
+                        ]
+                    },
+                    address: {
+                        identifier: 'address',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your address'
+                            }
+                        ]
+                    },
+                    initialweight: {
+                        identifier: 'initialweight',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your starting weight'
+                            }
+                        ]
+                    },
+                    gender: {
+                        identifier: 'gender',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your gender'
+                            }
+                        ]
+                    },
+                    height: {
+                        identifier: 'height',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please your height'
+                            }
+                        ]
+                    }
+                }
+            })
+    ;
+</script>
 <form class="ui stacked segment form" action="/register" method="POST">
-  <h3 class="ui header">Register for the GYM app of the future</h3>
-  <div class="two fields">
-    <div class="field">
-      <label>First Name</label>
-      <input placeholder="First Name" type="text"  name="firstName">
+    <h3 class="ui header">Register for the GYM app of the future</h3>
+    <div class="two fields">
+        <div class="field">
+            <label>First Name</label>
+            <input placeholder="First Name" type="text"  name="firstName">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input placeholder="Last Name" type="text"  name="lastName">
+        </div>
     </div>
     <div class="field">
-      <label>Last Name</label>
-      <input placeholder="Last Name" type="text"  name="lastName">
+        <label>Email</label>
+        <input placeholder="Email" type="text" name="email">
     </div>
-  </div>
-  <div class="field">
-    <label>Email</label>
-    <input placeholder="Email" type="text" name="email">
-  </div>
     <div class="field">
         <label>Password</label>
         <input type="password" name="password">
     </div>
-  <div class="field">
+    <div class="field">
         <label>Address</label>
         <input placeholder="Address" type="text" name="address">
     </div>
     <div class="two fields">
-    <div class="field">
-        <label>Height</label>
-        <input placeholder="0.0cm" type="text" name="height">
-    </div>
-    <div class="field">
-        <label>Starting Weight</label>
-        <input placeholder="0.0kg" type="text" name="initialweight">
-    </div>
         <div class="field">
+            <label>Height</label>
+            <input placeholder="0.0cm" type="text" name="height">
+        </div>
+        <div class="field">
+            <label>Starting Weight</label>
+            <input placeholder="0.0kg" type="text" name="initialweight">
+        </div>
+        <div class="field" >
             <label>Gender</label>
-            <input placeholder="" type="text" name="gender">
+            <select class = "ui fluid dropdown" name="gender">
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
         </div>
     </div>
     <button class="ui blue submit button">Submit</button>
