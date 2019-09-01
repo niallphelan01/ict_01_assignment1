@@ -26,10 +26,17 @@ const trainerDashboard = {
         var user = userStore.getUserById(userId);
 
         var assessmentlists = assessmentlistStore.getUserAssessmentlists(userId)
-        assessmentlists.sort((a,b)=> (a.date< b.date)?1:-1);
+        //sort the list by dates in chronological order
+        //reference https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/
+        //http://www.javascriptkit.com/javatutors/arraysort2.shtml
+
+        var sortedAssessmentlists = assessmentlists.sort(function(a,b){
+            var dateA=new Date(a.sortingdate), dateB=new Date(b.sortingdate);
+            return dateB-dateA; //sort by date ascending
+        });
             const viewData = {
                 //return the assessmentList for the users
-                assessmentList: assessmentlists,
+                assessmentList: sortedAssessmentlists,
                 //return the lastName and FirstName from the user
                 firstName: user.firstName,
                 lastName: user.lastName

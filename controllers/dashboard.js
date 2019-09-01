@@ -86,7 +86,13 @@ const dashboard = {
    var assessmentlists =  assessmentlistStore.getUserAssessmentlists(loggedInUser.id);
     //sort the list by dates in chronological order
     //reference https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/
-    assessmentlists.sort((a,b)=> (a.date< b.date)?1:-1);
+      //http://www.javascriptkit.com/javatutors/arraysort2.shtml
+
+      var sortedAssessmentlists = assessmentlists.sort(function(a,b){
+          var dateA=new Date(a.sortingdate), dateB=new Date(b.sortingdate);
+          return dateB-dateA; //sort by date ascending
+      });
+
     const viewData = {
       title: "Assessment Dashboard",
       BMI: BMI,
@@ -94,7 +100,7 @@ const dashboard = {
       BMICategory: BMICategory,
       loggedInUserFirstname: loggedInUser.firstName,
       loggedInUserLastname: loggedInUser.lastName,
-      assessmentlists: assessmentlists
+      assessmentlists: sortedAssessmentlists
     };
     logger.info("about to render assessment lists", assessmentlistStore.getUserAssessmentlists(loggedInUser.id));
     response.render("dashboard", viewData);
@@ -106,10 +112,17 @@ const dashboard = {
     //get tge current date and give the correct order
     var date = new Date();
     var formatted_date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " + date.getHours() +":"+ date.getMinutes();
+
+    //work out if the trend should be positive or negative
+
+          var memberId= request.cookies.memberId;
+       if (assessmentlistStore.getUserAssessmentlists(memberId).length > 0)
+           var trends = "red";
     const newAssessment = {
       id: uuid(),
       userid: loggedInUser.id,
       date: formatted_date,
+        sortingdate: date,
       weight: request.body.weight,
       chest: request.body.chest,
       thigh: request.body.thigh,
@@ -117,7 +130,8 @@ const dashboard = {
       waist: request.body.waist,
       hips: request.body.hips,
       gender: request.body.gender,
-      comment: "none"
+      comment: "none",
+        trend: trends
     };
      logger.debug("Creating a new Assessment", newAssessment);
      assessmentlistStore.addAssessment(newAssessment);

@@ -25,40 +25,59 @@
       "comment": "none"
     },
     {
-      "id": "5a715869-0616-4c88-98f9-7a2b8b206ad0",
+      "id": "23cdb3b7-28ff-4a96-ba22-46eb9a2240f8",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "date": "29-8-2019",
+      "date": "5-9-2019 6:55",
+      "sortingdate": "2019-09-05T05:55:26.398Z",
       "weight": "",
       "chest": "",
       "thigh": "",
       "upperarm": "",
       "waist": "",
       "hips": "",
-      "comment": "test"
-    },
-    {
-      "id": "3e6835f9-d334-4b67-aece-88c7e6b6662a",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "date": "29-8-2019",
-      "weight": "100",
-      "chest": "100",
-      "thigh": "100",
-      "upperarm": "100",
-      "waist": "100",
-      "hips": "100",
-      "comment": "you are doing great"
-    },
-    {
-      "id": "cb2d9760-d64e-4460-9e06-20b2b8bbe00d",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "date": "31-8-2019 20:13",
-      "weight": "100",
-      "chest": "100",
-      "thigh": "100",
-      "upperarm": "100",
-      "waist": "100",
-      "hips": "100",
       "comment": "none"
+    },
+    {
+      "id": "526fe51d-d558-465c-a87c-555fb91259c4",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "date": "6-9-2019 6:55",
+      "sortingdate": "2019-09-06T05:55:32.493Z",
+      "weight": "200",
+      "chest": "",
+      "thigh": "",
+      "upperarm": "",
+      "waist": "",
+      "hips": "",
+      "comment": "none",
+      "trend": "red"
+    },
+    {
+      "id": "274693e6-c3bd-422c-b94c-5877f7189396",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "date": "30-8-2019 6:55",
+      "sortingdate": "2019-08-30T05:55:41.116Z",
+      "weight": "150",
+      "chest": "200",
+      "thigh": "123",
+      "upperarm": "",
+      "waist": "",
+      "hips": "",
+      "comment": "none",
+      "trend": "red"
+    },
+    {
+      "id": "12eb6c9e-577b-4219-aa79-642b16855967",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "date": "1-9-2019 6:59",
+      "sortingdate": "2019-09-01T05:59:02.792Z",
+      "weight": "",
+      "chest": "",
+      "thigh": "",
+      "upperarm": "",
+      "waist": "",
+      "hips": "",
+      "comment": "none",
+      "trend": "red"
     }
   ]
 }

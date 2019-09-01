@@ -51,7 +51,7 @@ const accounts = {
   },
   updateCurrentUser(request,response){
     const user = request.body;
-    const userEmail = request.cookies.membert;
+    const userEmail = request.cookies.member;
     const currentUser = userstore.getUserByEmail(userEmail);
     currentUser.email=user.email;
     currentUser.firstName=user.firstName;
@@ -71,6 +71,7 @@ const accounts = {
     const user = userstore.getUserByEmail(request.body.email);
     if (user && user.password===request.body.password) {
       response.cookie("member", user.email);
+      response.cookie("memberId", user.id);
       logger.info(`logging in ${user.email}`);
       response.redirect("/dashboard");
     } else {
