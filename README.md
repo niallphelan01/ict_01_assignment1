@@ -1,4 +1,4 @@
-Welcome to the Playlist 4
+Welcome to the Gym Application
 =========================
 
-Version 4 of the Playlist application
+Welcome to the gym applicaiton, part of Niall Phelan's ict assignment
